@@ -1,0 +1,34 @@
+Structure of the page:
+
+    ------CHALLENGE: Recreate the page with flexbox to make it responsive.-----
+
+    Header:
+        ☐ Logo with link to home page
+        ☐ Navigation bar with links to:
+            ☐ Home
+            ☐ Expositions
+            ☐ Research
+            ☐ Collection
+            ☐ Videos
+            ☐ Photos
+            ☐ Contact
+    Main Content:
+        ☐ Banner with a museum photo
+        ☐ Video of the museum
+        ☐ Map with location of the museum
+        ☐ List with the available expositions
+        ☐ Short history of the museum
+    Aside:
+        ☐ Image with quote about the its creation
+        ☐ Form with a date, number of people input and a submit button to book a visit
+        ☐ Photo gallery with 4 photos displayed in a grid
+    Footer:
+        ☐ Navigation bar with links to:
+            ☐ Home
+            ☐ Expositions
+            ☐ Research
+            ☐ Collection
+            ☐ Videos
+            ☐ Photos
+            ☐ Contact
+        ☐ Year, Link to home page and "Todos os direitos reservados"
