@@ -28,17 +28,39 @@ header nav a{
     background: url("../images/logo.png");
     width: 248px; height: 21px;
 }
-
 main{
+    display: flex !important;
+    flex: 2 1;
+    max-width: 70%;
+    flex-flow: row wrap;
+    gap: 10px; padding: 10px;
     box-sizing: border-box;
-    flex-grow: 2;
-    height: 50vh;
+    align-content: flex-start;
     background-color: tomato;
+}
+.card:first-child{
+    width: 100% !important;
+    height: 20px;
+}
+.card{
+    flex-grow: 1;
+    width: 310px;
+    background-color: crimson;
+}
+.card h3{
+    color: darkgreen;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: .8em;
+}
+.card p{
+    font-size: .8em;
 }
 aside{
     box-sizing: border-box;
-    flex-grow: 1;
-    height: 50vh;
+    flex: 1 1;
+    max-width: 30%;
+    height: 200px;
     background-color: deepskyblue;
 }
 footer{
@@ -61,9 +83,11 @@ footer{
     header>*{margin: 10px;}
 
     main{
+        max-width: 100%;
         order: 2;
     }
     aside{
+        max-width: 100%;
         order: 3;
     }
     footer{
