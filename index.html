@@ -14,7 +14,7 @@
         <div class="container">
 <!--==================================================================================-->
             <header>
-                <a id="logo" href="index.html"></a>
+                <a id="logo" href="index.html"><img src="images/logo.png" alt=""></a>
                 <nav>
                     <a href="#">Home</a>
                     <a href="#">Expositions</a>
@@ -27,7 +27,7 @@
             </header>
 <!--==================================================================================-->
             <main>
-                <section class="card" id="banner">
+                <section id="banner">
                     <img src="images/museu.png" alt="">
                 </section>
                 <article class="card">
@@ -36,7 +36,7 @@
                 </article>
                 <article class="card">
                     <h3>MAPA - ENCONTRE O MUSEU</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.226529!3d-22.905760000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sus!4v1677709734388!5m2!1spt-BR!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.226529!3d-22.905760000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sus!4v1677709734388!5m2!1spt-BR!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
                 <article class="card">
                     <h3>EXPOSIÇÕES</h3>
@@ -61,21 +61,21 @@
 <!--==================================================================================-->
             <aside>
                 <section id="quote">
-                    <img src="/images/depoimento.png" width="100%" alt="">
+                    <img src="/images/depoimento.png" alt="">
                 </section>
-                <section id="bookVisit">
+                <section class="cardAside" id="bookVisit">
                     <h3>Book a visit</h3>
                     <form>
-                        <span>Date</span><input type="date" placeholder="dd/mm/aaaa"><span>How many people?</span><input type="number">
+                        <span>Date: </span><input type="date" placeholder="dd/mm/aaaa"><span> How many people?: </span><input type="number"><br><br>
                         <button>Book</button>
                     </form>
                 </section>
-                <section id="gallery">
+                <section class="cardAside" id="gallery">
                     <h3>Photo Gallery</h3>
-                    <div class="gallery">Photo</div>
-                    <div class="gallery">Photo</div>
-                    <div class="gallery">Photo</div>
-                    <div class="gallery">Photo</div>
+                    <div class="photo"><a href="#"><img src="images/imagem1.jpg" alt=""></a></div>
+                    <div class="photo"><a href="#"><img src="images/imagem2.jpg" alt=""></a></div>
+                    <div class="photo"><a href="#"><img src="images/imagem3.jpg" alt=""></a></div>
+                    <div class="photo"><a href="#"><img src="images/imagem4.jpg" alt=""></a></div>
                 </section>
             </aside>
 <!--==================================================================================-->
@@ -89,7 +89,7 @@
                     <a href="#">Photos</a>
                     <a href="#">Contact</a>
                 </nav>
-                <p>2023 - <a href="#">National Museum</a> - All rights reserved</p>
+                <div id="footerInfo">2023 - <a href="#">National Museum</a> - All rights reserved</div>
             </footer>
 <!--==================================================================================-->            
         </div>

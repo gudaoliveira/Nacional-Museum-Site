@@ -1,6 +1,6 @@
 body{
     background: url("../images/fundo.png")repeat-x top;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 a{text-decoration: none;}
 
@@ -11,110 +11,155 @@ a{text-decoration: none;}
     flex-flow: row wrap;
     gap: 10px;
 }
-
 header{
-    flex: 1 100%;
+    box-sizing: border-box;
+    padding: 10px;
     display: flex;
+    flex-flow: row wrap;
+    align-content: center;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 85px;
-    border: 1px solid green;
+    flex: 1 1 100%;
+    min-height: 85px;
+    padding: 20px 0;
 }
-header nav a{
-    color: #af670a;
-    text-transform: uppercase;
+header nav>*{
     font-size: .8em;
     padding: 10px;
+    color: #af670a;
+    text-transform: uppercase;
 }
-#logo{
-    background: url("../images/logo.png");
-    width: 248px; height: 21px;
-}
+
 main{
     display: flex !important;
-    flex: 2 1;
-    max-width: 70%;
     flex-flow: row wrap;
-    gap: 10px; padding: 10px;
-    box-sizing: border-box;
+    gap: 10px;
+    background-color: coral;
+    flex: 1 1 100%;
+}
+#banner{
+    width: 100%;
+}
+#banner img{
+    min-width: 100%;
+}
+.card{
+    display: flex;
+    flex-flow: row wrap;
     align-content: flex-start;
-    justify-content: center;
-    background-color: tomato;
-}
-.card:first-child{
-    min-width: 100% !important;
-    padding: 0;
-}
-.card {
-    flex: 1 1 220px;
-    /* max-width: 230px; */
-    min-height: 200px;
-    background-color: crimson;
-    padding: 10px 20px;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    flex: 1 1 100%;
+    background-color: lightsalmon;
+    height: 250px;
 }
 .card h3{
-    display: inline-block;
-    color: darkgreen;
+    color: #227115;
+    font-size: .9em;
     font-weight: bolder;
-    margin: 10px 0;
-    font-size: .8em;
+    text-transform: uppercase;
+    margin: 0;
+    flex-basis: 100%;
+    height: fit-content;
 }
-.card p{
-    font-size: .8em;
-    line-height: 1.3rem;
+.card p,
+.card a {
+    font-size: .9em;
 }
 .card a{
     color: #af670a;
-    font-size: .8em;
+    font-weight: bolder;
 }
-article.card iframe{
-    width: 100%; height: 180px;
+.card iframe{
+    flex: 1 1 100%;
+    min-height: 90%;
 }
-section.card img{
-    width: 100%; height: 100%;
 
-}
 aside{
-    box-sizing: border-box;
-    padding: 10px;
-    flex: 1 1;
-    max-width: 30%;
-    min-height: 200px;
-    background-color: deepskyblue;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    background-color: lightseagreen;
+    flex: 1 1 100%;
 }
+#quote{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+#quote img{
+    flex-grow: 2;
+    max-width: 450px;
+}
+#bookVisit{
+    flex: 1 1 100%;
+    justify-content: center;
+}
+#bookVisit input[type="number"]{
+    width: 30px;
+}
+#bookVisit button{
+    width: 150px; padding: 5px 0;
+    color: white;
+    background-color: #af670a;
+    border: 0;
+}
+#gallery{
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/fundo-foto.png");
+    width: 126px; height: 133px;
+}
+.cardAside{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    flex: 1 1 100%;
+    gap: 10px;
+    background-color: #ea1d9f;
+}
+.cardAside h3{
+    color: #af670a;
+    font-size: .9em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    flex-basis: 100%;
+    height: fit-content;
+}
+.cardAside p,
+.cardAside a {
+    font-size: .9em;
+}
+
 footer{
+    background-image: url("../images/fundo-rodape.png") center top no-repeat;
     box-sizing: border-box;
-    width: 100%; min-height: 100px;
-    background-color: gold;
+    display: flex; flex-flow: row wrap;
+    gap: 15px;
+    justify-content: center; align-items: center; align-content: center;
+    background-color: lightcoral;
+    flex: 1 1 100%;
+    padding: 20px 0;
 }
-
-@media all and (max-width: 600px){
-    .container{
-        flex-direction:column;
-    }
-    .card{
-        flex-basis: 100%;
-    }
-    header{
-        order: 1;
-        padding: 10px 0 5px 0;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    header>*{margin: 10px;}
-
-    main{
-        max-width: 100%;
-        order: 2;
-    }
-    aside{
-        max-width: 100%;
-        order: 3;
-    }
-    footer{
-        order: 4;
-        flex: 1 100%;
-    }
+footer nav>*{
+    flex: 1 1 100%;
+    font-size: .8em;
+    padding: 10px;
+    color: #af670a;
+    text-transform: uppercase;
+}
+#footerInfo{
+    text-align: center;
+    flex: 1 1 100%;
+    margin: 0 auto;
 }
