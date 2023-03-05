@@ -5,10 +5,12 @@ body{
 a{text-decoration: none;}
 
 .container{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 10px;
 }
 header{
@@ -18,7 +20,7 @@ header{
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
-    flex: 1 1 100%;
+    /* flex: 1 1 100%; */
     min-height: 85px;
     padding: 20px 0;
 }
@@ -33,14 +35,16 @@ main{
     display: flex !important;
     flex-flow: row wrap;
     gap: 10px;
-    background-color: coral;
-    flex: 1 1 100%;
+    /* background-color: coral; */
 }
 #banner{
-    width: 100%;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
 }
-#banner img{
-    min-width: 100%;
+img{
+    max-width: 100%;
+    height: auto;
 }
 .card{
     display: flex;
@@ -50,8 +54,8 @@ main{
     box-sizing: border-box;
     padding: 20px 10px;
     flex: 1 1 100%;
-    background-color: lightsalmon;
-    height: 250px;
+    background-color: #ebe7dd;
+    max-height: 300px;
 }
 .card h3{
     color: #227115;
@@ -72,34 +76,30 @@ main{
 }
 .card iframe{
     flex: 1 1 100%;
-    min-height: 90%;
+    max-height: 240px;
 }
 
 aside{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     gap: 10px;
-    background-color: lightseagreen;
-    flex: 1 1 100%;
+    background-color: #ebe7dd;
+    height: fit-content;
 }
-#quote{
-    display: flex;
-    justify-content: center;
-    flex: 1 1 100%;
-}
-#quote img{
-    flex-grow: 2;
-    max-width: 450px;
-}
+
 #bookVisit{
+    background-color: #cdc8b1;
     flex: 1 1 100%;
     justify-content: center;
+    align-content: center;
 }
+
 #bookVisit input[type="number"]{
     width: 30px;
 }
 #bookVisit button{
-    width: 150px; padding: 5px 0;
+    width: 100%; padding: 10px 0;
     color: white;
     background-color: #af670a;
     border: 0;
@@ -125,7 +125,7 @@ aside{
     padding: 20px 10px;
     flex: 1 1 100%;
     gap: 10px;
-    background-color: #ea1d9f;
+    /* background-color: #ea1d9f; */
 }
 .cardAside h3{
     color: #af670a;
@@ -147,12 +147,13 @@ footer{
     display: flex; flex-flow: row wrap;
     gap: 15px;
     justify-content: center; align-items: center; align-content: center;
-    background-color: lightcoral;
     flex: 1 1 100%;
     padding: 20px 0;
+    /* background-color: lightcoral; */
 }
 footer nav>*{
     flex: 1 1 100%;
+    font-weight: bolder;
     font-size: .8em;
     padding: 10px;
     color: #af670a;
@@ -162,4 +163,26 @@ footer nav>*{
     text-align: center;
     flex: 1 1 100%;
     margin: 0 auto;
+}
+#footerInfo a{
+    color: #af670a;
+}
+
+@media all and (max-width: 810px){
+    header{
+        justify-content: center;
+        gap: 20px;
+    }
+    #logo{
+        box-sizing: border-box;
+    }
+}
+
+@media all and (min-width: 768px){
+    main{
+        max-width: 55%;
+    }
+    aside{
+        max-width: 40%;
+    }
 }
