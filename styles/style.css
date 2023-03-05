@@ -20,7 +20,7 @@ header{
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
-    /* flex: 1 1 100%; */
+    flex: 1 1 100%;
     min-height: 85px;
     padding: 20px 0;
 }
